@@ -1,0 +1,2385 @@
+*{
+    box-sizing: border-box;
+    
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+}
+
+
+header{
+    width: 1440px;
+    max-width: 100%;
+    margin: auto;
+}
+
+
+
+
+nav {
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+
+}
+
+
+.nav-img-box{
+    background: #3056D3;
+    padding: 28px 32px 28px  135px;
+}
+
+
+
+@media(max-width:1348px){
+    .nav-img-box {
+        padding: 22px 28px 22px  130px;
+
+    }
+
+    nav {
+        width: 100%;
+    }
+}
+
+@media(max-width:1092px){
+    .nav-img-box {
+        padding: 20px 22px 20px  120px;
+
+    }
+}
+
+
+
+ul {
+    margin: 0 58px 0 0;
+}
+
+nav ul li{
+    display: inline-block;
+    
+}
+
+nav ul li{
+    padding: 0 22px 0 22px;
+}
+
+
+nav ul li a{
+    text-decoration: none;
+    color: #151828;
+    font-style: normal;
+font-weight: 600;
+font-size: 16px;
+line-height: 19px;
+}
+
+.nav-a-teg{
+    color: #3056D3;
+}
+
+
+.nav-img-box2 {
+    display: flex;
+    align-items: center;
+    padding: 0 135px 0 0;
+}
+
+.nav-img-box2 img {
+    padding: 12px 13px;
+    background: #3056D3;
+    border-radius: 50%;
+}
+
+.number-box{
+    padding: 0 0 0 15px;
+}
+
+
+.number-box h3{
+    font-family: 'Inter';
+font-style: normal;
+font-weight: 600;
+font-size: 17px;
+line-height: 21px;
+color: #212B36;
+margin: 2px;
+}
+
+
+.number-box p {
+    font-family: 'Inter';
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 17px;
+color: #637381;
+margin: 2px;
+}
+
+/* აქ გავაკეთე ნავბარი */
+
+
+
+.hamburger{
+    display: none;
+    cursor: pointer;
+}
+
+span {
+    display: block;
+    width: 24px;
+    height: 6px;
+    margin: 6px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3 ease-in-out;
+    background-color: #1c2662;
+    border-radius: 30px;
+}
+
+
+.nav-menu{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+@media(max-width:1338px){
+    .hamburger {
+        display: block;
+        padding: 0 30px 0 0;
+    }
+
+
+
+
+.hamburger.active .bar2{
+    opacity: 0;
+    transition: all 0.2s ease-in-out;
+}
+
+.hamburger.active .bar1{
+transform: translateY(12px) rotate(45deg);
+}
+
+.hamburger.active .bar3{
+    transform:translateY(-12px) rotate(-45deg);
+}
+
+
+
+
+
+
+.nav-menu {
+    position: fixed;
+    opacity: 0;
+    top: 74px;
+    gap: 0;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    width: 27%;
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    transition: all 0.3s;
+    
+}
+
+
+.nav-item {
+    margin: 20px 0;
+    
+}
+
+
+.nav-menu.active {
+opacity: 1;
+}
+
+
+.nav-menu ul li{
+ 
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #212B36;
+    padding: 15px;
+}
+
+}
+
+
+
+
+
+
+@media(max-width:1040px){
+    .nav-menu ul li{
+ 
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid #212B36;
+        padding: 15px;
+    }
+
+    .nav-menu{
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        width: 33%;
+        margin-top:-6px;
+    }
+
+    .nav-img-box2{
+        padding: 0;
+    }
+
+
+    .nav-img-box {
+        padding: 10px 40px 10px  40px;
+          
+    }
+
+
+}
+
+
+
+@media(max-width:939px){
+    .nav-menu{
+        width: 36%;
+    }
+}
+
+
+@media(max-width:744px){
+    .nav-menu{
+        width: 45%;
+    }
+}
+
+
+
+
+@media(max-width:670px){
+    .nav-menu{
+        width: 50%;
+    }
+}
+
+
+@media(max-width:480px){
+    .nav-menu{
+        width: 100%;
+    }
+
+
+    .nav-img-box {
+        padding: 10px 40px 10px  40px;
+          
+    }
+}
+
+
+
+@media(max-width:354px){
+    .nav-img-box{
+        padding: 10px 15px 10px 15px;
+        
+    }
+
+    .nav-img-box img{
+        width: 170px;
+    }
+
+
+    .nav-menu{
+        margin-top: -12px;
+    }
+}
+
+/* აქ გავაკეთე ბურგერ მენიუ და ნავბარის რესფონსივი */
+
+
+
+.back-image {
+    width: 100%;
+    max-width: 100%;
+    margin: auto;
+    background-image: url(products/backround-img/Rectangle\ 4574.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 120px 135px;
+}
+
+
+
+.back-texts-box {
+    padding: 60px 60px 65px 60px;
+    width: 570px;
+    max-width: 100%;
+    background: #FFFFFF;
+}
+
+.back-texts-box .a-text{
+    font-family: 'Inter';
+font-style: normal;
+font-weight: 600;
+font-size: 16px;
+line-height: 19px;
+color: #3056D3;
+text-decoration: none;
+}
+
+
+.back-texts-box h1 {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 46px;
+    color: #212B36;
+    margin-top: 15px;
+}
+
+
+
+.back-texts-box p {
+    font-family: 'Inter';
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 28px;
+color: #637381;
+margin-top: 24px;
+}
+
+
+
+.btns-box {
+    margin-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.btns-box a:first-child{
+    background: #3056D3;
+    padding: 14px 24px;
+    font-family: 'Inter';
+font-style: normal;
+font-weight: 500;
+font-size: 15px;
+line-height: 18px;
+color: #FFFFFF;
+text-decoration: none;
+}
+
+
+.btns-box a:last-child {
+    padding: 14px 24px;
+    text-decoration: none;
+    font-family: 'Inter';
+font-style: normal;
+font-weight: 600;
+font-size: 15px;
+line-height: 18px;
+color: #212B36;
+}
+
+
+.a-icon {
+    margin: 0 10px;
+}
+
+/*აქ გავაკეთე ბაგრაუნდი*/
+
+
+@media(max-width:674px){
+
+    .back-image{
+        padding: 20px 30px;
+    }
+
+}
+
+
+
+@media(max-width:558px){
+
+    .back-texts-box .a-text{
+        font-size: 10px;
+        line-height: 10px;
+
+    }
+
+    .back-texts-box h1{
+        font-size: 20px;
+        line-height: 28px;
+    }
+
+    .back-texts-box p{
+        font-size: 10px;
+        line-height: 18px;
+    }
+
+
+    .btns-box a{
+      margin: 5px 0;
+
+    }
+
+
+    .btns-box a:first-child{
+        font-size: 10px;
+        padding: 8px 15px;
+    }
+
+    .btns-box a:last-child{
+        font-size: 10px;
+        padding: 8px 0px;
+    }
+
+}
+
+    
+
+/*აქ გავაკეთე ბეგრაუნდის რესფონსივი*/
+
+
+.second-box {
+    width: 1440px;
+    max-width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 120px 135px;
+    
+}
+
+
+.first-inline-box{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 600px;
+    max-width: 100%;
+}
+
+
+
+.image-cont{
+    display: grid;
+
+}
+
+.image-cont img{
+    padding: 0 15px 30px 0;
+}
+
+
+.image-3{
+   padding: 0 15px;
+}
+
+
+.second-inline-box{
+    width: 470px;
+    max-width: 100%;
+}
+
+
+.second-inline-box a:first-child{
+font-family: 'Inter';
+font-style: normal;
+font-weight: 600;
+font-size: 18px;
+line-height: 24px;
+text-decoration: none;
+color: #3056D3;
+}
+
+
+.second-inline-box h1{
+    font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 35px;
+line-height: 45px;
+text-transform: capitalize;
+color: #2E2E2E;
+margin-top: 15px;
+}
+
+
+.second-inline-box p{
+    font-family: 'inter';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 25px;
+color: #637381;
+}
+
+.first-p{
+    margin-top: 24px;
+}
+
+.second-p{
+    margin: 30px 0 68px 0;
+}
+
+.btn-get{
+font-family: 'Inter';
+font-style: normal;
+font-weight: 600;
+font-size: 16px;
+line-height: 19px;
+text-align: center;
+color: #FFFFFF;
+background: #3056D3;
+border-radius: 8px;
+padding: 18px 39px;
+text-decoration: none;
+margin-bottom: -50px;
+}
+
+
+/* აქ გავაკეთე ფოტოები */
+
+
+@media(max-width:570px){
+
+    .second-box {
+        padding: 0;
+    }
+
+    .image-cont{
+        margin: auto;
+    }
+
+    .image-3{
+        margin: auto;
+    }
+
+}
+
+@media(max-width:1342px){
+    .second-box{
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+/* აქ გავაკეთე ფოტოების რესფონსივი */
+
+
+
+
+.box-3{
+    width: 1440px;
+    max-width: 100%;
+    margin: auto;
+    padding: 120px 135px;
+    background: #F4F7FF;
+
+}
+
+.box-3-texts{
+    width: 770px;
+    max-width: 100%;
+    margin: auto;
+    text-align: center;
+    
+}
+
+
+.box-3-texts a{
+font-family: 'Inter';
+font-style: normal;
+font-weight: 600;
+font-size: 18px;
+line-height: 24px;
+text-align: center;
+color: #3056D3;
+text-decoration: none;
+}
+
+
+.box-3-texts h1{
+    font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 40px;
+line-height: 45px;
+text-transform: capitalize;
+color: #2E2E2E;
+margin-top: 8px;
+}
+
+
+.box-3-texts p{
+    font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 25px;
+color: #637381;
+margin-top: 15px;
+}
+
+
+.six-conts-box {
+    width: 100%;
+    max-width: 100%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-top: 80px;
+    gap: 25px;
+}
+
+
+.contsss {
+    background: #FFFFFF;
+box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+border-radius: 20px;
+width: 370px;
+max-width: 100%;
+padding: 40px 54px 49px 40px;
+
+}
+
+
+.contsss img{
+    background: #3056D3;
+box-shadow: 0px 4px 11px rgba(0, 0, 0, 0.06);
+border-radius: 15px;
+}
+
+.contsss:nth-child(1) img{
+    padding: 18px 17px;
+}
+
+.contsss:nth-child(2) img{
+padding: 24px 14px;
+}
+
+.contsss:nth-child(3) img{
+padding: 18px 17px 17px 18px;
+}
+
+.contsss:nth-child(4) img{
+    padding: 18px 17px;
+}
+
+.contsss:nth-child(5) img{
+padding: 18px 20px;
+}
+
+
+.contsss:nth-child(6) img{
+    padding: 18px 17px;
+}
+
+
+.contsss h3 {
+    font-family: 'Inter';
+font-style: normal;
+font-weight: 600;
+font-size: 24px;
+line-height: 29px;
+color: #000000;
+}
+
+
+.contsss p {
+    font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 15px;
+line-height: 24px;
+color: #637381;
+}
+
+
+/* აქ გავაკეთე მესამე ბოქსი */
+
+@media (max-width:644px){
+    .box-3 {
+        padding: 0;
+    }
+}
+
+
+@media (max-width:570px){
+    .box-3{
+        margin-top: 100px;
+    }   
+}
+
+
+@media(max-width:852px){
+    .second-inline-box {
+        margin-top: 50px;
+    }
+}
+
+/* აქ გავაკეთე მესამე ბოქსის რესფონსივი */
+
+
+
+.box-4 {
+    width: 1440px;
+    max-width: 100%;
+    margin: auto;
+    padding: 120px 135px 200px 135px;
+    
+}
+
+
+.box-4-textss{
+    width: 770px;
+    max-width: 100%;
+    margin: auto;
+    text-align: center;
+}
+
+
+.box-4-textss a {
+    font-family: 'Inter';
+font-style: normal;
+font-weight: 600;
+font-size: 18px;
+line-height: 24px;
+text-align: center;
+color: #3056D3;
+text-decoration: none;
+}
+
+.box-4-textss h1 {
+    font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 40px;
+line-height: 45px;
+text-transform: capitalize;
+color: #2E2E2E;
+margin-top: 8px;
+}
+
+.box-4-textss p {
+    font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 25px;
+color: #637381;
+margin-top: 15px;
+}
+
+
+.navigation {
+    width: 656px;
+    max-width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 60px;
+}
+
+
+.navigation a:first-child {
+font-family: 'Inter';
+font-style: normal;
+font-weight: 600;
+font-size: 16px;
+line-height: 28px;
+text-align: center;
+text-transform: capitalize;
+color: white;
+background: #3056D3;
+border-radius: 8px;
+text-decoration: none;
+padding: 11px 35px;
+}
+
+.navigation a {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 28px;
+    text-align: center;
+    text-transform: capitalize;
+    color: #637381;
+    border-radius: 8px;
+    text-decoration: none;
+
+}
+
+
+.six-box-cont2 {
+    width: 100%;
+    max-width: 100%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;    
+}
+
+
+.conts2 {
+    width: 370px;
+    max-width: 100%;
+    margin: auto;
+    height: 300px;
+    margin-top: 100px;
+
+}
+
+
+.conts2-texts {
+    padding: 35px 60px 35px 60px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.08);
+    border-radius: 8px;
+    width: 315px;
+    max-width: 100%;
+    margin: auto;
+    transform:translateY(190px) ;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+.conts2:nth-child(1){
+background-image: url(products/images-4/Rectangle\ 1.jpg);
+}
+
+.conts2:nth-child(2){
+    background-image: url(products/images-4/Rectangle\ 2.jpg);
+}
+
+.conts2:nth-child(3){
+    background-image: url(products/images-4/Rectangle\ 3.jpg);
+}
+
+.conts2:nth-child(4){
+    background-image: url(products/images-4/Rectangle\ 4.jpg);
+    margin-top: 100px;
+}
+
+.conts2:nth-child(5){
+    background-image: url(products/images-4/Rectangle\ 5.jpg);
+        margin-top: 100px;
+
+}
+
+.conts2:nth-child(6){
+    background-image: url(products/images-4/Rectangle\ 6.jpg);
+        margin-top: 100px;
+
+}
+
+
+
+.conts2-texts p{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+    text-transform: capitalize;
+    color: #3056D3;
+}
+
+
+.conts2-texts h3{
+font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 18px;
+line-height: 24px;
+text-align: center;
+text-transform: capitalize;
+color: #212B36;
+margin-top: 0;
+}
+
+
+.conts2-texts a {
+    font-family: 'Inter';
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 24px;
+text-align: center;
+text-transform: capitalize;
+color: #637381;
+border: 1px solid #EAEAEA;
+border-radius: 5px;
+padding: 11px 31px;
+text-decoration: none;
+transition: all 0.3s ease-in-out;
+}
+
+.conts2-texts a:hover {
+    color: #FFFFFF;
+    background: #3056D3;
+}
+
+
+/* აქ გავაკეთე მეოთხე ბოქსი */
+
+
+@media (max-width:653px){
+    .box-4 {
+        padding: 0;
+    }
+
+}
+
+
+@media (max-width:496px) {
+    .navigation {
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+    }
+
+
+}
+
+/* აქ გავაკეთე მეოთხე ბოქსის რესფონსივი */
+
+
+
+
+.box-5 {
+    width: 1440px;
+    max-width: 100%;
+    margin: auto;
+    padding: 120px 135px;
+    background: #F4F7FF;
+}
+
+
+.box-5-textss {
+    width: 770px;
+    max-width: 100%;
+    margin: auto;
+    text-align: center;   
+}
+
+
+
+.box-5-textss a {
+    font-family: 'Inter';
+font-style: normal;
+font-weight: 600;
+font-size: 18px;
+line-height: 24px;
+color: #3056D3;
+text-align: center;
+text-decoration: none;
+}
+
+
+.box-5-textss h1 {
+    font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 40px;
+line-height: 45px;
+text-align: center;
+text-transform: capitalize;
+color: #212B36;
+margin-top: 8px;
+}
+
+
+
+.box-5-textss p {
+    font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 25px;
+text-align: center;
+color: #637381;
+margin-top: 15px;
+}
+
+
+.staff-box {
+    width: 100%;
+    max-width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 27px;
+}
+
+
+.staf {
+    width: 270px;
+    max-width: 100%;
+    height: 330px;
+    background-size: cover;
+}
+
+
+.staf:nth-child(1){
+background-image: url(products/images-5/Rectangle\ 4338-1.jpg);
+}
+
+
+.staf:nth-child(2){
+    background-image: url(products/images-5/Rectangle\ 4338-2.jpg);
+}
+
+
+.staf:nth-child(3){
+    background-image: url(products/images-5/Rectangle\ 4338-3.jpg);
+}
+
+
+.staf:nth-child(4){
+    background-image: url(products/images-5/Rectangle\ 4338-4.jpg);
+}
+
+
+
+.staf-name{
+    width: 230px;
+    padding: 21px 55px;
+    background: #FFFFFF;
+    border-radius: 8px;
+    margin: auto;
+    margin-top: 229px;
+}
+
+
+.staf-name h3 {
+    font-family: 'Inter';
+font-style: normal;
+font-weight: 600;
+font-size: 14px;
+line-height: 24px;
+text-align: center;
+text-transform: capitalize;
+color: #212B36;
+margin: 1px;
+}
+
+.staf-name p {
+    font-family: 'Inter';
+font-style: normal;
+font-weight: 500;
+font-size: 12px;
+line-height: 16px;
+text-align: center;
+text-transform: capitalize;
+color: #637381;
+ margin: 1px;
+}
+
+/* აქ გავაკეთე მეხუთე ბოქსი */
+
+
+@media(max-width:845px){
+    .box-5{
+        padding: 0;
+    }
+}
+
+
+@media (max-width:652px){
+    .box-5 {
+        margin-top: 200px;
+    }
+}
+
+/* აქ გავაკეთე მეხუთე მოქსის რესფონსივი */
+
+
+
+
+
+.box-6 {
+    width: 1440px;
+    max-width: 100%;
+    margin: auto;
+    padding: 120px 0;
+}
+
+.box-6-textss{
+    width: 770px;
+    max-width: 100%;
+    margin: auto;
+    text-align: center;
+
+}
+
+
+.box-6-textss a {
+    font-family: 'Inter';
+font-style: normal;
+font-weight: 600;
+font-size: 18px;
+line-height: 24px;
+text-align: center;
+color: #3056D3;
+text-decoration: none;
+}
+
+
+.box-6-textss h1 {
+    font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 40px;
+line-height: 45px;
+text-align: center;
+text-transform: capitalize;
+color: #2E2E2E;
+margin-top: 8px;
+}
+
+.box-6-textss p {
+    font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 25px;
+text-align: center;
+color: #637381;
+margin-top: 15px;
+}
+
+
+
+.pricing-box {
+    width: 100%;
+    max-width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+
+.purchase-cards:nth-child(1) {
+    width: 406px;
+    max-width: 100%;
+    padding: 45px 80px;
+    text-align: center;
+    background: #FFFFFF;
+border: 2px solid #D4DEFF;
+
+}
+
+
+
+.purchase-cards:nth-child(1) h3 {
+    font-family: 'Inter';
+font-style: normal;
+font-weight: 600;
+font-size: 16px;
+line-height: 28px;
+text-align: center;
+color: #212B36;
+}
+
+
+.purchase-cards:nth-child(1) h2{
+    font-family: 'Inter';
+font-style: normal;
+font-weight: 600;
+font-size: 28px;
+line-height: 34px;
+color: #3056D3;
+margin-top: 6px;
+margin-bottom: 38px;
+
+}
+
+
+
+.purchase-cards:nth-child(1) p {
+    font-family: 'Inter';
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 24px;
+color: #637381;
+text-align: center;
+margin-top: 17px;
+}
+
+
+.lastp {
+    margin-bottom: 40px;
+}
+
+
+.purchase-cards:nth-child(1) a {
+    font-family: 'Inter';
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 24px;
+text-align: center;
+color: #3056D3;
+border: 1px solid #D4DEFF;
+border-radius: 48px;
+padding: 15px 44px;
+text-decoration: none;
+margin-top: 40px;
+}
+
+
+.purchase-cards:nth-child(2){
+    width: 370px;
+    max-width: 100%;
+    padding: 55px 85px;
+    text-align: center;
+    background: linear-gradient(180deg, #3056D3 0%, #179BEE 100%);
+border-radius: 8px;
+}
+
+
+.popular-a {
+    font-family: 'Inter';
+font-style: normal;
+font-weight: 600;
+font-size: 15px;
+line-height: 18px;
+text-align: center;
+letter-spacing: 0.5px;
+color: #3056D3;
+background: #FFFFFF;
+border-radius: 36px;
+text-decoration: none;
+padding: 10px 25px;
+}
+
+
+.purchase-cards:nth-child(2) h3 {
+    font-family: 'Inter';
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 28px;
+text-align: center;
+color: #FFFFFF;
+margin-top: 30px;
+}
+
+
+.purchase-cards:nth-child(2) h2 {
+    font-family: 'Inter';
+font-style: normal;
+font-weight: 600;
+font-size: 28px;
+line-height: 34px;
+color: #FFFFFF;
+margin-top: 6px;
+}
+
+
+.purchase-cards:nth-child(2) p {
+    font-family: 'Inter';
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 24px;
+text-align: center;
+color: #FFFFFF;
+margin-top: 17px;
+}
+
+
+.lastp2 {
+    margin-bottom: 60px;
+}
+
+
+.popular-a2 {
+    font-family: 'Inter';
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 24px;
+text-align: center;
+color: #000000;
+background: #FFFFFF;
+border-radius: 48px;
+padding: 15px 42px;
+text-decoration: none;
+}
+
+
+
+.purchase-cards:nth-child(3) {
+    width: 406px;
+    max-width: 100%;
+    padding: 45px 80px;
+    text-align: center;
+    background: #FFFFFF;
+border: 2px solid #D4DEFF;
+}
+
+
+.purchase-cards:nth-child(3) h3 {
+    font-family: 'Inter';
+font-style: normal;
+font-weight: 600;
+font-size: 16px;
+line-height: 28px;
+text-align: center;
+color: #212B36;
+}
+
+
+.purchase-cards:nth-child(3) h2{
+    font-family: 'Inter';
+font-style: normal;
+font-weight: 600;
+font-size: 28px;
+line-height: 34px;
+color: #3056D3;
+margin-top: 6px;
+margin-bottom: 38px;
+}
+
+
+
+.purchase-cards:nth-child(3) p {
+    font-family: 'Inter';
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 24px;
+color: #637381;
+text-align: center;
+margin-top: 17px;
+}
+
+
+.lastp3 {
+    margin-bottom: 40px;
+}
+
+
+.purchase-cards:nth-child(3) a {
+    font-family: 'Inter';
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 24px;
+text-align: center;
+color: #3056D3;
+border: 1px solid #D4DEFF;
+border-radius: 48px;
+padding: 15px 44px;
+text-decoration: none;
+margin-top: 40px;
+}
+
+
+@media (max-width:380px){
+    .purchase-cards:nth-child(1){
+        padding: 45px 40px;
+    }
+
+    .purchase-cards:nth-child(2){
+        padding: 55px 40px;
+    }
+
+    .purchase-cards:nth-child(3){
+        padding: 45px 40px;
+    }
+
+    .purchase-cards {
+        margin-top: 20px;
+    }
+
+}
+
+/* აქ გავაკეთე მეექვსე მოქსი pricing */
+
+
+
+.navigation-bar {
+    width: 1440px;
+    max-width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #3056D3;
+    gap: 120px;
+    flex-wrap: wrap;
+    padding: 97px 0;
+}
+
+
+
+.navigation-bar h1 {
+    font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 35px;
+line-height: 48px;
+color: #FFFFFF;
+width: 470px;
+}
+
+
+
+.navigation-icons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 580px;
+    max-width: 100%;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+/* აქ გავაკეთე მეშვიდე ბოქსი */
+
+
+
+
+
+.person-info {
+    width: 1440px;
+    max-width: 100%;
+    margin: auto;
+    padding: 120px 0;
+    background: #F4F7FF;
+}
+
+.person-info-textss {
+    width: 770px;
+    max-width: 100%;
+    text-align: center;
+    margin: auto;
+}
+
+
+.person-info-textss a {
+    font-family: 'Inter';
+font-style: normal;
+font-weight: 600;
+font-size: 18px;
+line-height: 24px;
+text-align: center;
+color: #3056D3;
+text-decoration: none;
+}
+
+
+.person-info-textss h1 {
+    font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 40px;
+line-height: 45px;
+text-align: center;
+text-transform: capitalize;
+color: #2E2E2E;
+margin-top: 8px;
+}
+
+
+.person-info-textss p {
+    font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 25px;
+text-align: center;
+color: #637381;
+margin-top: 15px;
+}
+
+
+.person-face {
+    width: 770px;
+    max-width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 57px;
+    padding: 58px 70px;
+    background: #FFFFFF;
+border-radius: 8px;
+margin-top: 80px;
+}
+
+
+.person-texts {
+    width: 400px;
+    max-width: 100%;
+    
+}
+
+.person-texts p:first-child {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 25px;
+    color: #637381;
+}
+
+.person-texts h3 {
+    font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 18px;
+line-height: 25px;
+color: #3056D3;
+}
+
+
+.person-texts p:last-child{
+    font-family: 'Inter';
+font-style: italic;
+font-weight: 400;
+font-size: 13px;
+line-height: 16px;
+color: #A6A6A6;
+}
+
+
+.ovals {
+    width: 122px;
+    max-width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+}
+
+@media(max-width:768px){
+    .person-texts{
+        text-align: center;
+    }
+}
+
+/* აქ გავაკეთე მერვე ბოქსი */
+
+
+
+
+.box-9 {
+    width: 1440px;
+    max-width: 100%;
+    margin: auto;
+    padding: 120px 0 0 0;
+}
+
+
+.box-9-textss {
+    width: 770px;
+    max-width: 100%;
+    margin: auto;
+    text-align: center;
+}
+
+
+.box-9-textss a {
+    font-family: 'Inter';
+font-style: normal;
+font-weight: 600;
+font-size: 18px;
+line-height: 24px;
+text-align: center;
+color: #3056D3;
+text-decoration: none;
+}
+
+
+.box-9-textss h1 {
+    font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 40px;
+line-height: 45px;
+text-align: center;
+text-transform: capitalize;
+color: #2E2E2E;
+}
+
+
+.box-9-textss p {
+    font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 15px;
+line-height: 25px;
+text-align: center;
+color: #637381;
+}
+
+
+
+.three-cards-box9 {
+    width: 100%;
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-top: 80px;
+}
+
+
+.cards9 {
+    width: 370px;
+    max-width: 100%;
+}
+
+
+.cards9 img {
+    width: 100%;
+    max-width: 100%;
+    margin: auto;
+    margin-bottom: 30px;
+}
+
+
+
+.cards9 a {
+    font-family: 'Inter';
+font-style: normal;
+font-weight: 600;
+font-size: 12px;
+line-height: 24px;
+color: #FFFFFF;
+text-decoration: none;
+background: #0C4DF4;
+border-radius: 5px;
+padding: 4px 19px;
+margin-top: 30px;
+}
+
+
+
+.cards9 h3 {
+    font-family: 'Inter';
+font-style: normal;
+font-weight: 600;
+font-size: 24px;
+line-height: 32px;
+color: #212B36;
+margin-top: 21px;
+
+}
+
+
+.cards9 p {
+    font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 28px;
+color: #637381;
+margin-top: 15px;
+}
+
+
+
+@media(max-width:776px){
+    .cards9 {
+        text-align: center;
+    }
+}
+
+/* აქ გავაკეთე მეცხრე ბოქსი */
+
+
+
+
+
+
+
+.box-10 {
+    width: 1440px;
+    max-width: 100%;
+    margin: auto;
+    padding: 120px 0 0 0;
+}
+
+
+
+.box-10-butonss {
+    width: 1170px;
+    max-width: 100%;
+    margin: auto;
+    background: #061e6b;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 256px;
+    padding: 71px 0;
+    
+}
+
+
+.box-10-texts {
+    width: 389px;
+    max-width: 100%;
+
+}
+
+
+.box-10-texts p {
+    font-family: 'Inter';
+font-style: normal;
+font-weight: 600;
+font-size: 16px;
+line-height: 22px;
+color: #FFFFFF;
+}
+
+
+.box-10-texts h1 {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 45px;
+    color: #FFFFFF;
+}
+
+
+
+.btn10 {
+font-family: 'Inter';
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 19px;
+text-align: center;
+color: #FFFFFF;
+text-decoration: none;
+padding: 18px 51px;
+background: rgba(255, 255, 255, 0.15);
+border-radius: 5px;
+}
+
+
+.btn10-2{
+    font-family: 'Inter';
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 19px;
+text-align: center;
+color: #FFFFFF;
+background: #3056D3;
+border-radius: 5px;
+text-decoration: none;
+padding: 18px 25px;
+}
+
+
+
+
+
+.btns10 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+
+@media(max-width:388px){
+    .box-10-butonss{
+        gap: 50px;
+        text-align: center;
+    }
+}
+
+/* აქ გავაკეთე 10-ე ბოქსი */
+
+
+
+
+
+
+.box-11 {
+    width: 1440px;
+    max-width: 100%;
+    margin: auto;
+    padding: 115px 0;
+}
+
+
+.inline-11 {
+    width: 100%;
+    max-width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 130px;
+    flex-wrap: wrap;
+
+}
+
+
+.cards-11{
+    width: 170px;
+    max-width: 100%;
+    text-align: center;
+
+}
+
+
+.cards-11:nth-child(1) h3 {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    color: #000000;
+    margin-bottom: 12px;
+}
+
+.cards-11:nth-child(1) p {
+    font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 15px;
+line-height: 22px;
+text-align: center;
+color: #637381;
+ margin: 0;
+}
+
+
+
+
+.cards-11:nth-child(2) h3 {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    color: #000000;
+    margin-bottom: 12px;
+
+}
+
+.cards-11:nth-child(2) p {
+    font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 15px;
+line-height: 22px;
+text-align: center;
+color: #637381;
+margin: 0;
+
+}
+
+
+
+
+
+.cards-11:nth-child(3) img {
+    
+   padding: 42px 46px;
+   background: #F7F8FA;
+   border-radius: 50%;
+    
+}
+
+
+.cards-11:nth-child(3) h3{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    color: #000000;
+    margin-bottom: 12px;
+}
+
+
+.cards-11:nth-child(3) p {
+    font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 15px;
+line-height: 22px;
+text-align: center;
+color: #637381;
+margin: 0;
+}
+
+/* აქ გავაკეთე 11-ე ბოქსი */
+
+
+
+
+
+.box-12 {
+    width: 1440px;
+    max-width: 100%;
+    margin: auto;
+    padding: 120px 0;
+    background: #F7F8FA;
+
+}
+
+.box-12-textss{
+    width: 770px;
+    max-width: 100%;
+    margin: auto;
+    text-align: center;
+
+}
+
+
+.box-12-textss a {
+    font-family: 'Inter';
+font-style: normal;
+font-weight: 600;
+font-size: 18px;
+line-height: 24px;
+text-align: center;
+color: #3056D3;
+text-decoration: none;
+}
+
+
+.box-12-textss h1 {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 45px;
+    text-align: center;
+    text-transform: capitalize;
+    color: #2E2E2E;
+}
+
+
+.box-12-textss p {
+    font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 25px;
+text-align: center;
+color: #637381;
+}
+
+
+
+.inpts-box {
+    margin-top: 70px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+.first-inpts {
+    display: grid;
+    grid-template-columns: auto;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    
+}
+
+.first-inpts label {
+font-family: 'Inter';
+font-style: normal;
+font-weight: 600;
+font-size: 16px;
+line-height: 19px;
+color: #212B36;
+}
+
+
+.first-inpts input {
+    width: 570px;
+    max-width: 100%;
+    height: 60px; 
+    outline: none;
+    background: #FFFFFF;
+border: 1px solid #EBEBEB;
+border-radius: 5px;
+    
+}
+
+
+.big-label {
+    font-family: 'Inter';
+font-style: normal;
+font-weight: 600;
+font-size: 16px;
+line-height: 19px;
+color: #212B36;
+margin-top: 36px;
+}
+
+.big-inpt {
+    width: 1170px;
+    max-width: 100%;
+    margin: auto;
+    padding:  5px 0 160px 0;
+    outline: none;
+    background: #FFFFFF;
+    border: 1px solid #EBEBEB;
+    border-radius: 5px;
+}
+
+@media (max-width:1174px){
+    .big-inpt{
+        width: 900px;
+    }
+
+}
+
+
+@media(max-width:906px){
+    .big-inpt{
+        width: 700px;
+    }
+}
+
+@media (max-width:702px){
+    .big-inpt{
+        width: 450px;
+    }
+
+    .big-label{
+        margin: 0 30px;
+        margin-top: 15px;
+    }
+
+
+    .first-inpts input{
+        width: 450px;
+    }
+
+
+}
+
+
+
+@media (max-width:490px){
+    .big-inpt{
+        width: 300px;
+    }
+
+    .big-label{
+        margin: 0 100px;
+        margin-top: 15px;
+    }
+
+
+    .first-inpts input{
+        width: 300px;
+    }
+
+
+}
+
+
+
+.check-box {
+width: 490px;
+max-width: 100%;
+display: flex;
+justify-content: flex-start;
+}
+
+
+.check-box p {
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 19px;
+color: #637381;
+text-align: center;
+}
+
+
+@media (max-width:490px) {
+    .check-box{
+        width: 290px;
+    }
+}
+
+
+
+
+
+.btn-boxxxx {
+    width: 100%;
+    max-width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 70px;
+}
+
+
+.last-btn {
+    font-family: 'Inter';
+font-style: normal;
+font-weight: 600;
+font-size: 16px;
+line-height: 19px;
+color: #FFFFFF;
+background: #3056D3;
+border-radius: 5px;
+padding: 20px 128px;
+text-decoration: none;
+
+}
+
+
+@media (max-width:372px) {
+    .last-btn {
+        padding: 20px 70px;
+    }
+}
+
+
+
+
+
+.last-infos-box14 {
+    width: 1440px;
+    max-width: 100%;
+    margin: auto;
+    padding: 120px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 100px;
+}
+
+
+.informations:nth-child(1) {
+    width: 270px;
+    max-width: 100%;
+}
+
+
+.informations:nth-child(1) p{
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 15px;
+line-height: 26px;
+color: #637381;
+
+}
+
+
+.last-iconss14 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 143px;
+    max-width: 100%;
+    margin-top: 53px;
+
+}
+
+
+.informations:nth-child(2) {
+    width: 131px;
+    max-width: 100%;
+
+}
+
+
+
+
+.informations:nth-child(2) h1 {
+    font-family: 'Inter';
+font-style: normal;
+font-weight: 600;
+font-size: 18px;
+line-height: 24px;
+color: #212B36;
+margin-bottom: 35px;
+}
+
+
+.informations:nth-child(2) p {
+    font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 15px;
+line-height: 20px;
+color: #637381;
+margin-top: 15px;
+}
+
+
+
+.informations:nth-child(3) {
+    width: 122px;
+    max-width: 100%;
+
+}
+
+
+
+
+
+.informations:nth-child(3) h1 {
+    font-family: 'Inter';
+font-style: normal;
+font-weight: 600;
+font-size: 18px;
+line-height: 24px;
+color: #212B36;
+margin-bottom: 35px;
+}
+
+
+.informations:nth-child(3) p {
+    font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 15px;
+line-height: 20px;
+color: #637381;
+margin-top: 15px;
+}
+
+
+
+.informations:nth-child(4){
+    width: 270px;
+    max-width: 100%;
+}
+
+
+.informations:nth-child(4) h1{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 24px;
+    color: #212B36;
+    
+}
+
+
+.informations:nth-child(4) p {
+    font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 15px;
+line-height: 24px;
+color: #637381;
+margin-top: 35px;
+}
+
+
+
+
+.last-inptss14 {
+display: flex;
+justify-content: center;
+align-items: center;
+margin-top: 22px;
+}
+
+.last-inptss14 input {
+    padding: 16px 38px 16px 20px;
+    border-bottom-left-radius:5px;
+    border-top-left-radius: 5px;
+    border: 1px solid #EEEEEE;
+
+}
+
+.last-inptss14 input::placeholder {
+    font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 26px;
+color: #637381;
+
+}
+
+
+
+.last-pp {
+    font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 15px;
+line-height: 24px;
+color: #637381;
+margin-top: 20px;
+
+}
+
+
+
+
+@media (max-width:504px){
+    .last-infos-box14 {
+        text-align: center;
+    }
+
+
+    .last-iconss14 {
+        margin: auto;
+    }
+}
